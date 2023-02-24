@@ -12,7 +12,7 @@ public class stopDocker {
 	{
 		Runtime runtime=Runtime.getRuntime();	
 		runtime.exec("cmd /c start dockerDown.bat");	
-		Thread.sleep(5000);
+		Thread.sleep(10000); // need to implement a better buffer to wait for the containers to shutdown
 		
 		File fileLog=new File("output.txt");
 			if(fileLog.exists()) 

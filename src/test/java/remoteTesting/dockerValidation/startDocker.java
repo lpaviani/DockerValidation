@@ -18,7 +18,7 @@ public class startDocker {
 	boolean flag=false;	
 	Runtime runtime=Runtime.getRuntime();	
 	runtime.exec("cmd /c start dockerUp.bat");			
-	Thread.sleep(3000); // time for the File to be created on the OS
+	Thread.sleep(5000); // time for the File to be created on the OS
 	
 	//Calendar cal=Calendar.getInstance();
 	//cal.add(Calendar.SECOND,30);
